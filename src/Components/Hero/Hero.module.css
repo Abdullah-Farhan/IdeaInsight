@@ -1,0 +1,107 @@
+.heroContainer {
+  width: 80%;
+  height: 30rem;
+  display: flex;
+  margin-left: 3rem;
+  align-items: center;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero_content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.mainHeading {
+  color: rgb(27, 45, 65);
+  line-height: 3rem;
+  font-weight: 900;
+  font-size: 1.4rem;
+}
+
+.paragraph {
+  color: rgb(27, 45, 65);
+  line-height: 2rem;
+  font-size: 1.2rem;
+}
+
+.start_Btn {
+  width: 9rem;
+  height: 2.5rem;
+  border-radius: 2rem;
+  border-style: none;
+  color: white;
+  background: rgb(0, 79, 66);
+  cursor: pointer;
+}
+
+.secondaryBtn {
+  align-items: center;
+  display: flex;
+  gap: 1rem;
+}
+
+.heroImage {
+  position: absolute;
+  right: 60px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .mainHeading {
+    font-weight: 300;
+    font-size: 0.5rem;
+  }
+  .paragraph {
+    font-size: 0.7rem;
+  }
+  .input {
+    height: 1.8rem;
+    width: 10rem;
+  }
+  .demo_Btn {
+    width: 7rem;
+    height: 1.8rem;
+  }
+  .heroContainer {
+    flex-direction: column;
+    margin: auto;
+  }
+  .heroImage {
+    position: relative;
+    right: 0;
+  }
+  .heroImage img {
+    display: none;
+    /* width: 75%; */
+  }
+  .demo_Btn {
+    font-size: 0.7rem;
+  }
+  .hero_content {
+    margin-top: 7rem;
+    line-height: 1rem;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .mainHeading {
+    font-weight: 300;
+    font-size: 0.8rem;
+  }
+  .paragraph {
+    font-size: 0.7rem;
+  }
+  .input {
+    height: 2rem;
+    width: 10rem;
+  }
+  .demo_Btn {
+    width: 7rem;
+    height: 2rem;
+  }
+  .heroImage img {
+    position: static;
+    width: 75%;
+  }
+}

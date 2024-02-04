@@ -1,0 +1,88 @@
+.mainContent {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.knowBtn {
+  width: 6rem;
+  height: 2.5rem;
+  border-radius: 2rem;
+  border-style: none;
+  color: white;
+  background: rgb(0, 79, 66);
+  cursor: pointer;
+  margin-top: 0.5rem;
+}
+
+@media screen and (min-width: 1440px) and (max-width: 3120px) {
+  .cardSection {
+    justify-content: space-between;
+    margin: auto;
+    gap: 5rem;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .cardSection {
+    margin: 0 auto;
+    gap: 5rem;
+    justify-content: space-between;
+  }
+  .card {
+    height: 85%;
+    width: 30%;
+  }
+}
+
+/* @media screen and (min-width: 1024px){
+    .card{
+        height: 85%;
+        width: 30%;
+    }
+} */
+
+@media screen and (min-width: 2560px) {
+  .cardSection {
+    gap: 4rem;
+    width: 60%;
+  }
+  .mainContent {
+    width: 60%;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .card {
+    height: 85%;
+    width: 70%;
+  }
+  .cardSection {
+    flex-direction: column;
+    width: 100%;
+    height: 50%;
+  }
+  .heading {
+    font-size: 1.2rem;
+    font-weight: 700;
+  }
+  .cardPara {
+    font-size: 0.8rem;
+  }
+  .mainContent h2 {
+    font-size: 1rem;
+  }
+  .knowBtn {
+    width: 6rem;
+    height: 2rem;
+    font-size: 0.7rem;
+  }
+}
